@@ -1,5 +1,12 @@
+#logo{
+	width:30px;
+	height:auto;
+}
+.nav-text{
+	color:white !important;
+}
 #section_title{
-	padding:100px 0 0 104px;
+	padding:30px 0 0 104px;
 	font-size:20px;
 	font-family: cursive;
 	font-weight: bolder;
@@ -7,29 +14,80 @@
 
 
 #display_posters{
-	padding:0 100px 300px 100px;
-	
+	padding:0 100px 0px 100px;
+
 }
 
 #movie_posters{
 
-/*	width:100px;*/
-	text-align: left;
-	display:inline-block;
-	
+	/*	width:100px;*/
+	text-align: center;
+	display:inline;	
 }
 
 .single_poster{
-	
-	 display:inline-block;
-	padding: 5px 10px 1px 5px;
-	
+
+	display:inline-block;
+	padding: 5px 10px 1px 5px;	
 }
 
-#prev {
-	float:left;
+.crop {
+	height:231px;
+	width: 154px;
+	overflow:hidden;
+
 }
-#next {
-	float:right;
+
+
+
+.crop img{
+	height: 231px;
+	width: auto;
 }
+
+.single_poster img {
+	box-shadow: 1px 2px 8px #000;
+}
+
+
+@media only screen and (max-width:375px) {
+	#section_title{
+		padding:20px 0 0 0;
+		font-size:5px;
+		font-family: cursive;
+		font-weight: bolder;
+	}
+
+
+	#display_posters{
+		padding:0px;
+		text-align:center;
+
+	}
+
+	#movie_posters{
+
+		/*	width:100px;*/
+		text-align: left;
+		display:inline;	
+	}
+
+	.single_poster{
+
+		display:inline-block;
+		padding: 5px 10px 1px 5px;	
+	}
+
+	.crop {
+		height:231px;
+		width: 154px;
+		overflow:hidden;
+
+	}
+	.crop img{
+		height: 231px;
+		width: auto;
+	}
+}
+
 
