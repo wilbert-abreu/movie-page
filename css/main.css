@@ -1,0 +1,35 @@
+#section_title{
+	padding:100px 0 0 104px;
+	font-size:20px;
+	font-family: cursive;
+	font-weight: bolder;
+}
+
+
+#display_posters{
+	padding:0 100px 300px 100px;
+	
+}
+
+#movie_posters{
+
+/*	width:100px;*/
+	text-align: left;
+	display:inline-block;
+	
+}
+
+.single_poster{
+	
+	 display:inline-block;
+	padding: 5px 10px 1px 5px;
+	
+}
+
+#prev {
+	float:left;
+}
+#next {
+	float:right;
+}
+
