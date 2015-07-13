@@ -64,7 +64,7 @@
 	#display_posters{
 		padding:0px 0 0 0;
 		text-align:center;
-		margin-left: -50px;
+		margin-left: -25px;
 
 	}
 
@@ -78,17 +78,17 @@
 	.single_poster{
 
 		display:inline-block;
-		padding: 5px 10px 1px 5px;	
+		padding: 5px 0px 1px 5px;	
 	}
 
 	.crop {
-		height:231px;
-		width: 154px;
+		height:173.25px;
+		width: 115.5px;
 		overflow:hidden;
 
 	}
 	.crop img{
-		height: 231px;
+		height: 173.25px;
 		width: auto;
 	}
 }
