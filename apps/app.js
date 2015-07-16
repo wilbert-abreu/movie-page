@@ -86,14 +86,6 @@ $(function(){
 
 		var css  = 'linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(http://image.tmdb.org/t/p/original/' + backdrop_path + ')';
 
-		$('.modal-content').css('background-image',css);
-		$('.modal-content').blurjs({
-			source: '.blur',
-			overlay: 'rgba(255,255,255,0.3)'
-		});;
+		$('.modal-content').css('background-image',css);	
 	}
-
 });
-
-
-

@@ -55,6 +55,7 @@ body > .container {
 	position:relative;
 	top: 40px;
 	left: 50px;
+	line-height: 1.2;
 }
 
 button.close {
