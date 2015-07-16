@@ -81,7 +81,7 @@ $(function(){
 	function showModal(backdrop_path,poster_path,original_title,vote_average,release_date,overview) {
 		$('#myModal').modal('show'); 
 
-		var html = '<div><img src="http://image.tmdb.org/t/p/w185/' + poster_path + '" /></div><div class="Modal-text"><p>' + original_title + '</p><br><p>Score: ' + vote_average + '</p><br><p>Release date: ' + release_date + '</p><br><p>' + overview + '</p></div>';
+		var html = '<div><img src="http://image.tmdb.org/t/p/w185/' + poster_path + '" /></div><div class="Modal-text"><div class="top-line"><span>' + original_title + '</span><span> Score: ' + vote_average + '</span><span> Release date: ' + release_date + '</span></div><br><p>' + overview + '</p></div>';
 		$('.modal-body').html(html);
 
 		var css  = 'linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), url(http://image.tmdb.org/t/p/original/' + backdrop_path + ')';

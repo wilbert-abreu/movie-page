@@ -62,3 +62,8 @@ button.close {
 	color:red;
 	float:none;
 }
+
+.top-line span{
+	display:inline-block;
+	padding-right:100px;
+}
