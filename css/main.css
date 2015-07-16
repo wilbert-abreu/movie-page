@@ -48,9 +48,14 @@ body > .container {
 	border-radius: 0;
 	color:white;
 	overflow:auto;
-	
 	background-size:cover;
 	
+}
+
+.modal-header {
+	color:white;
+	text-align:left;
+	border-bottom: none;
 }
 
 .modal-body div img {
@@ -58,11 +63,16 @@ body > .container {
 	margin-top: 50px;
 }
 
-.modal-body div + p {
+.Modal-text {
 	display:inline;
-	margin-top: 50px;
-	font-size: 30px;
+	font-size: 25px;
 }
+
+button.close {
+	color:red;
+	float:none;
+}
+
 
 
 
