@@ -24,18 +24,6 @@ body > .container {
 	margin: 8px;
 }
 
-/*
-.background-image {
-	background-size: cover;
-	display: block;
-	height: 800px;
-	left: 0;
-	position: fixed;
-	right: 0;
-	z-index: 1;
-}
-*/
-
 .modal-dialog {
 	width: 100%;
 	height: 100%;
@@ -46,15 +34,12 @@ body > .container {
 .modal-content {   
 	height: 100%;
 	border-radius: 0;
-	color:white;
 	overflow:auto;
 	background-size:cover;
 	
 }
 
 .modal-header {
-	color:white;
-	text-align:left;
 	border-bottom: none;
 }
 
@@ -65,16 +50,14 @@ body > .container {
 
 .Modal-text {
 	display:inline;
+	color:white;
 	font-size: 25px;
+	position:relative;
+	top: 40px;
+	left: 50px;
 }
 
 button.close {
 	color:red;
 	float:none;
 }
-
-
-
-
-
-
