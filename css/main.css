@@ -24,17 +24,17 @@ body > .container {
 	margin: 8px;
 }
 
+/*
 .background-image {
 	background-size: cover;
 	display: block;
-	filter: blur(5px);
-	-webkit-filter: blur(20px);
 	height: 800px;
 	left: 0;
 	position: fixed;
 	right: 0;
 	z-index: 1;
 }
+*/
 
 .modal-dialog {
 	width: 100%;
@@ -49,8 +49,22 @@ body > .container {
 	color:white;
 	overflow:auto;
 	
-	background-size:cover;	
+	background-size:cover;
+	
 }
+
+.modal-body div img {
+	float:left;
+	margin-top: 50px;
+}
+
+.modal-body div + p {
+	display:inline;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+
 
 
 

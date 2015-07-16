@@ -55,15 +55,15 @@ $(function(){
 			} else {
 				html += '<div class="poster" data-id="' + id + '"><img src="http://image.tmdb.org/t/p/w154' + poster_path  + '"  title="' + poster_title + '"/></div>';
 				$('#posters').html(html);
-				
+
 			}
 		});
 		$(".poster").on("click", function () {
-					console.log($(this).data('id'));
-					var movie_id = $(this).data('id')
-					console.log(movie_id)
-					movieDetails(movie_id);
-				});
+			console.log($(this).data('id'));
+			var movie_id = $(this).data('id')
+			console.log(movie_id)
+			movieDetails(movie_id);
+		});
 	}
 
 	function movieDetails(id) {
@@ -80,13 +80,17 @@ $(function(){
 
 	function showModal(backdrop_path,poster_path,original_title,vote_average,release_date,overview) {
 		$('#myModal').modal('show'); 
-		
-		var html = '<div><img src="http://image.tmdb.org/t/p/w154/' + poster_path + '" /><p>' + original_title + '</p><p>score: ' + vote_average + '</p><p>Release date: ' + release_date + '</p><p>' + overview + '</p></div>';
+
+		var html = '<div><img src="http://image.tmdb.org/t/p/w154/' + poster_path + '" /><p>' + original_title + '</p><br><br><p>score: ' + vote_average + '</p><br><br><p>Release date: ' + release_date + '</p><br><br><p>' + overview + '</p></div>';
 		$('.modal-body').html(html);
-		
-		var css  = 'url(http://image.tmdb.org/t/p/original/' + backdrop_path + ') norepeat center center fixed';
-		
+
+		var css  = 'url(http://image.tmdb.org/t/p/original/' + backdrop_path + ')';
+
 		$('.modal-content').css('background-image',css);
+		$('.modal-content').blurjs({
+			source: '.blur',
+			overlay: 'rgba(255,255,255,0.3)'
+		});;
 	}
 
 });
